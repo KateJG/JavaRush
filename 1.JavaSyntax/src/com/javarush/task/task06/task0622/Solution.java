@@ -13,17 +13,35 @@ public class Solution {
 
         //напишите тут ваш код
 
-        int[] list = new int[5];
+        int[] arr = new int[5];
 
-        //заполнение массива
-        for (int i = 0; i < list.length; i++)
-            list[i] = Integer.parseInt(reader.readLine());
+        for (int i = 0; i < arr.length; i++)
+        {
+            arr[i] = Integer.parseInt(reader.readLine());
+        }
 
-        //вывод на экран
-        for (int i = 0; i < list.length; i++)
-            System.out.println(list);
+        int [] bubble = bubbleSort(arr);
+        for(int i = 0; i < arr.length; i ++)
+            System.out.println(bubble[i]);
+    }
+
+    public static int[] bubbleSort(int[] arr)
+    {
+        for(int i = arr.length - 1; i > 0; i--)
+        {
+            for(int j = 0; j < i; j++)
+            {
+                if(arr[j] > arr[j + 1]){
+                    int temp = arr[j];
+                    arr[j] = arr[j + 1];
+                    arr[j + 1] = temp;
+                }
+            }
+        }
+        return arr;
     }
 }
+
 
 
 
