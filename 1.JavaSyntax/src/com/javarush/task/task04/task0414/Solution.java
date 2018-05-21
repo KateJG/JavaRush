@@ -10,15 +10,26 @@ public class Solution {
     public static void main(String[] args) throws Exception {
         //напишите тут ваш код
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-        String sAge = reader.readLine();
-        int nAge = Integer.parseInt(sAge);
+        int n = Integer.parseInt(reader.readLine());
 
-        if ((nAge % 4 == 0 && nAge % 100 >0) || (nAge % 4 == 0 && nAge % 400 == 0 && nAge % 100 == 0)) {
+        if ((n % 4 == 0 && n % 100 > 0) || (n % 4 == 0 && n % 400 == 0 && n % 100 == 0)) {
             System.out.println("количество дней в году: 366");
         } else {
             System.out.println("количество дней в году: 365");
 
         }
+
+//        if (n%4==0 ){
+//            if (n%400 == 0)
+//                System.out.println("количество дней в году: 366");
+//            else if (n%100 == 0)
+//                System.out.println("количество дней в году: 365");
+//            else System.out.println("количество дней в году: 366");
+//        }
+//        else System.out.println("количество дней в году: 365");
+
+
+
     }
 }
 

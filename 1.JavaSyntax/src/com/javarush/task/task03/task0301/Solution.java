@@ -15,5 +15,6 @@ public class Solution {
         //напишите тут ваш код
         int div = a/b;
         System.out.print(div + " ");
+
     }
 }

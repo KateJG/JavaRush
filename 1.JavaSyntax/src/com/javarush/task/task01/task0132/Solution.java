@@ -6,7 +6,7 @@ package com.javarush.task.task01.task0132;
 
 public class Solution {
     public static void main(String[] args) {
-        System.out.println(sumDigitsInNumber(546));
+        System.out.println(sumDigitsInNumber(5461));
     }
 
     public static int sumDigitsInNumber(int number) {
@@ -37,8 +37,8 @@ public class Solution {
 //    }
 
         /////////////Method4/////////////////////////
-        //5            //4               //6
-        number = (number / 100) + (number % 100 / 10) + (number % 100 % 10);
+                          //5            //4                     //6                         //1
+        number = (number / 1000) + (number % 1000 / 100) + (number % 1000 %100 / 10) + (number %1000 % 100 % 10);
         return number;
     }
 }
