@@ -44,6 +44,7 @@ public class Solution {
     public static void set10000(List list) {
         //напишите тут ваш код
         for (int i = 0; i < 10000; i ++) {
+            //list.set(i, list.get(i));
             list.set(i, list.get(i));
         }
 
@@ -52,7 +53,7 @@ public class Solution {
     public static void remove10000(List list) {
         //напишите тут ваш код
         for (int i = 0; i < list.size(); i ++) {
-            list.remove(i);
+            list.clear();
         }
 
     }

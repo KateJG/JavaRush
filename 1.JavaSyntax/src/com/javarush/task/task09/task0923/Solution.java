@@ -8,7 +8,7 @@ import java.io.InputStreamReader;
 */
 
 public class Solution {
-    public static char[] vowels = new char[]{'a', 'e', 'i', 'o', 'u','y' };
+    public static char[] vowels = new char[]{'а', 'я', 'у', 'ю', 'и', 'ы', 'э', 'е', 'о', 'ё'};
 
     public static void main(String[] args) throws Exception {
         //напишите тут ваш код

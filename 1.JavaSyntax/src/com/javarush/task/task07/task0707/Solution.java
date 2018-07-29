@@ -11,12 +11,12 @@ public class Solution {
         //напишите тут ваш код
         ArrayList<String> list = new ArrayList<>();
         for (int i = 0; i < 5; i++) {
-            list.add(String.valueOf(i));
-            System.out.println(list.size());
+            list.add("Any string ");
+            System.out.println("This is list size: " +list.size());
         }
 
-        for (int i =0; i < list.size(); i++) {
-            System.out.println(list.get(i));
+        for (int i = 0; i < list.size(); i++) {
+            System.out.println("This is contents of the list: " +list.get(i));
         }
     }
 }

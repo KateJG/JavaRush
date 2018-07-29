@@ -27,7 +27,7 @@ public class Solution {
                 new_set.add(j);
             }
         }
-        //set.removeAll(new_set);
+        set.removeAll(new_set);
         return set;
 
     }
@@ -35,6 +35,7 @@ public class Solution {
     public static void main(String[] args) {
 
         System.out.println(removeAllNumbersMoreThan10(createSet()));
+
 
     }
 }

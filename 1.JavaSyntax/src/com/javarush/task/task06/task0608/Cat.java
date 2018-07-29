@@ -15,11 +15,13 @@ public class Cat {
         //напишите тут ваш код
         return catCount;
 
+
     }
 
     public static void setCatCount(int catCount) {
         //напишите тут ваш код
         Cat.catCount = catCount;
+
     }
 
     public static void main(String[] args) {

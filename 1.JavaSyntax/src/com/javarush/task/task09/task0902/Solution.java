@@ -13,12 +13,17 @@ public class Solution {
     public static String method1() {
         method2();
         //напишите тут ваш код
+        System.out.println("This is method 1 which calls method 2 ");
+
         return Thread.currentThread().getStackTrace()[2].getMethodName();
+
+
     }
 
     public static String method2() {
         method3();
         //напишите тут ваш код
+        System.out.println(Thread.currentThread().getStackTrace()[2].getClassLoaderName());
         return Thread.currentThread().getStackTrace()[2].getMethodName();
     }
 

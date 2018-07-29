@@ -12,15 +12,15 @@ public class Solution {
 
     public static int method1() {
         method2();
-        //System.out.print("This is  method 1 ");
-        //System.out.println(Thread.currentThread().getStackTrace()[2].getLineNumber());
+        System.out.print("This is  method 1 ");
+        System.out.println(Thread.currentThread().getStackTrace()[2].getLineNumber());
         return Thread.currentThread().getStackTrace()[2].getLineNumber();
     }
 
     public static int method2() {
         method3();
-        //System.out.print("This is method2 ");
-        //System.out.println(Thread.currentThread().getStackTrace()[2].getLineNumber());
+        System.out.print("This is method 2 ");
+        System.out.println(Thread.currentThread().getStackTrace()[2].getLineNumber());
         return Thread.currentThread().getStackTrace()[2].getLineNumber();
     }
 

@@ -18,8 +18,8 @@ public class Solution {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 
         Date date = new Date(reader.readLine());
-        SimpleDateFormat fdate = new SimpleDateFormat("MMM dd, YYYY", Locale.ENGLISH);
-        System.out.println(fdate.format(date).toUpperCase());
+        SimpleDateFormat fDate = new SimpleDateFormat("MMM dd, YYYY", Locale.ENGLISH);
+        System.out.println(fDate.format(date).toUpperCase());
 
 
     }

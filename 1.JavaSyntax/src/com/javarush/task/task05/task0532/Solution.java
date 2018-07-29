@@ -9,19 +9,15 @@ import java.io.*;
 public class Solution {
     public static void main(String[] args) throws Exception {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-        int maximum = -2147483648;
-        int a = Integer.parseInt(reader.readLine());
+        int maximum = Integer.MIN_VALUE;
+        int n = Integer.parseInt(reader.readLine());
 
-        for(int i =0; i < a; i++) {
-            int b = Integer.parseInt(reader.readLine());
-            if (maximum < b)
-                maximum = b;
+        for(int i = 0; i < n; i ++) {
+            int m = Integer.parseInt(reader.readLine());
+            if(m > maximum)
+                maximum = m; // assigning 1-st entered value to maximum variable
         }
 
-
-
-
-            System.out.println(maximum);
-        }
+        System.out.println(maximum);
     }
-
+}

@@ -13,15 +13,13 @@ public class Cat {
     public Cat() {
     }
 
-    //public boolean fight(Cat anotherCat) {
+    public boolean fight(Cat anotherCat) {
         //напишите тут ваш код
+        if((this.weight + this.strength / this.age) > (anotherCat.weight + strength / age))
+            return true;
+        else
+            return false;
 
-        public boolean fight(Cat anotherCat) {
-            if ((weight * strength / age) > (anotherCat.weight * anotherCat.strength / anotherCat.age)) {
-                return true;
-            } else {
-                return false;
-            }
     }
 
     public static void main(String[] args) {

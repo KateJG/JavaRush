@@ -25,20 +25,20 @@ public class Solution {
 
     public static ArrayList<String> fix(ArrayList<String> list) {
         //напишите тут ваш код
-
-        for (int i = list.size()-1; i >= 0; i--) {
-
-            if (list.get(i).indexOf("р") == -1 && list.get(i).indexOf("л") != -1)
-            {
-                list.add(i,list.get(i));
-            }
-            else if (list.get(i).indexOf("р") != -1 && list.get(i).indexOf("л") == -1)
-            {
+        for(int i = 0; i < list.size(); i ++) {
+            if(list.get(i).contains("р") && list.get(i).contains("л"));
+            else if (list.get(i).contains("р")) {
                 list.remove(i);
+                i--;
+            }
+            else if (list.get(i).contains("л")) {
+                list.add(0,list.get(i));
+                i++;
             }
 
         }
+
+
         return list;
     }
-
 }

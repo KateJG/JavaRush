@@ -41,6 +41,10 @@ public class Solution {
     }
 
     public static void main(String[] args) {
+        removeAllSummerPeople(createMap());
+        System.out.println(createMap());
+
+
 
     }
 }

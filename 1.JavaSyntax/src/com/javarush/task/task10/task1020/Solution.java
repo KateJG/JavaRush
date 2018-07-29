@@ -21,9 +21,20 @@ public class Solution {
         System.out.println(array[9]);
         System.out.println(array[10]);
     }
+
     public static void sort(int[] array) {
         //напишите тут ваш код
-     Arrays.sort(array);
+        Arrays.sort(array);
+//        for(int i = 0; i < array.length; i ++) {
+//            for(int j = 0; j < array.length; j++) {
+//                if (array[i] < array[j]) {
+//                    int tmp = array[i];
+//                    array[i] = array[j];
+//                    array[j] = tmp;
+//                }
+//            }
+//        }
+
 
     }
 }

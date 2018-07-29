@@ -20,7 +20,7 @@ public class Solution {
             numbers.add(Integer.parseInt(reader.readLine()));
         }
 
-        for (int i = numbers.size() -1; i >= 0; i-- ) {
+        for (int i = numbers.size()-1; i >= 0; i-- ) {
             System.out.println(numbers.get(i));
         }
 

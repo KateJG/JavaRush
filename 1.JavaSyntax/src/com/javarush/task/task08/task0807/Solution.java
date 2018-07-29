@@ -10,15 +10,15 @@ public class Solution {
     public static Object createArrayList() {
         //напишите тут ваш код
 
-        ArrayList<String> createArraylist = new ArrayList<String>();
-        return new ArrayList<>();
+        List list = new ArrayList();
+        return list;
 
     }
 
     public static Object createLinkedList() {
         //напишите тут ваш код
-        LinkedList<String> createLinkedList = new LinkedList<String>();
-        return new LinkedList<>();
+        List list = new LinkedList<String>();
+        return list;
 
     }
 

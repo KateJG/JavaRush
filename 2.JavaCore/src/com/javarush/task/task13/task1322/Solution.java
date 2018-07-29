@@ -17,10 +17,6 @@ public class Solution {
         @Override
         public StringObject<String> getInstance() {
             return new StringObject<String>();
-
-
         }
     }
-
-
 }

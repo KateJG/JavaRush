@@ -10,21 +10,21 @@ import java.io.InputStreamReader;
 public class Solution {
     public static void main(String[] args) throws Exception {
         //напишите тут ваш код
-        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+        BufferedReader rd = new BufferedReader(new InputStreamReader(System.in));
 
         String[] list = new String[10];
-        int[] numbers = new int[list.length];
+        int[] num = new int[10];
 
-        for( int i = 0; i < list.length; i++) {
-           list[i] = reader.readLine();
-           numbers[i] = list[i].length();
+
+        for(int i = 0; i < list.length; i++) {
+            list[i] = rd.readLine();
+            num[i] = list[i].length();
         }
 
-
-        for(int i = 0; i < numbers.length; i++) {
-            //int[i] = i;
-            System.out.println(numbers[i]);
+        for(int i : num) {
+            System.out.println(i);
         }
+
 
 
     }

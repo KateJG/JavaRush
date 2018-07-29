@@ -24,11 +24,16 @@ public class Solution {
         printValues(map);
     }
 
-    public static void printValues(Map<String, String> map) {
-        //напишите тут ваш код
-        for (String s: map.values()) {
-            System.out.println(s);
+//    public static void printValues(Map<String, String> map) {
+//        //напишите тут ваш код
+//        for (String s: map.values()) {
+//            System.out.println(s);
+//
+//        }
+             public static void printValues(Map<String, String> map) {
 
-        }
-    }
-}
+         for (Map.Entry me : map.entrySet()) System.out.println(me.getValue());
+     }
+ }
+
+

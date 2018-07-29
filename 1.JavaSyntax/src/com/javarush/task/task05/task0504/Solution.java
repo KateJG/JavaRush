@@ -8,9 +8,11 @@ package com.javarush.task.task05.task0504;
 public class Solution {
     public static void main(String[] args) {
         //напишите тут ваш код
-        Cat cat1 = new Cat("A", 1, 1,1);
-        Cat cat2 = new Cat("B", 2,2,2);
-        Cat cat3 = new Cat("C", 3,3,3);
+
+        Cat cat1 = new Cat("Tim", 2, 3, 7);
+        Cat cat2 = new Cat ("Vaska", 3, 4, 9);
+        Cat cat3 = new Cat ("Vaskin", 5, 3, 9);
+
     }
 
     public static class Cat {

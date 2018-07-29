@@ -19,7 +19,7 @@ public class Solution {
         // создай и заполни массив
 
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-        int[] list = new int[5];
+        int[] list = new int[20];
         for (int i = 0; i < list.length; i++)
             list[i] = Integer.parseInt(reader.readLine());
 

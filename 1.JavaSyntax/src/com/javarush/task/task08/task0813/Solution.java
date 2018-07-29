@@ -17,14 +17,10 @@ public class Solution {
         }
         return set;
 
-
-
-
     }
 
-
     public static void main(String[] args) {
-        //System.out.println(createSet());
+        System.out.println(createSet());
 
     }
 }

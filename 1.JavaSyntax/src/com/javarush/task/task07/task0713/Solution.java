@@ -27,13 +27,14 @@ public class Solution {
                 list3.add(x);
                 if(x % 2 == 0)
                  evenList.add(x);
-                if (x % 3 != 0 && x % 2 !=0)
+                if (x % 3 == 0 && x % 2 == 0)
                 adList.add(x);
 
         }
 
         printList(list3);
         printList(evenList);
+        //System.out.println("---------------");
         printList(adList);
     }
 

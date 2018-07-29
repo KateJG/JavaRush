@@ -3,29 +3,28 @@ package com.javarush.task.task07.task0727;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.ArrayList;
+import java.util.*;
 
 /* 
 Меняем функциональность
 */
 
 public class Solution {
-    public static void main(String[] args) throws IOException {
-        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+    public static void main(String[] args) {
+        List<String> list = new ArrayList<String>();
+        list.add("Mama");
+        list.add("Mila");
+        list.add("Ramu");
 
-        ArrayList<String> list = new ArrayList<String>();
-        while (true) {
-            String s = reader.readLine();
-            if (s.isEmpty()) break;
-            list.add(s);
+        Iterator<String> iterator = list.iterator();//получение итератора для списка
+
+        while (iterator.hasNext())      //проверка, есть ли ещё элементы
+        {
+            //получение текущего элемента и переход на следующий
+            String text = iterator.next();
+
+            System.out.println(text);
         }
-
-        ArrayList<String> listUpperCase = new ArrayList<String>();
-        for (String s : list) {
-            if (s.length() % 2 == 0) {
-                System.out.println(s + " " + s);
-            } else System.out.println(s + " " + s + " " + s);
-        }
-
     }
 }
+

@@ -10,18 +10,20 @@ import java.io.InputStreamReader;
 public class Solution {
     public static void main(String[] args) throws Exception {
         //напишите тут ваш код
-        BufferedReader r = new BufferedReader(new InputStreamReader(System.in));
+        BufferedReader rd = new BufferedReader(new InputStreamReader(System.in));
         int sum = 0;
 
         while(true) {
-            String s = r.readLine();
-            if (s.equals("сумма")) { break;
+            String s = rd.readLine();
+            if(s.equals("сумма")) break;
+            else {
+                sum += Integer.parseInt(s);
             }
-            else {int x = Integer.parseInt(s);
-            sum += x;
-            }
-
         }
+
         System.out.println(sum);
+
     }
 }
+
+

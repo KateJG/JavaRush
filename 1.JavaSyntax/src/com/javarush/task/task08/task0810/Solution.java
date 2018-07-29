@@ -30,6 +30,7 @@ public class Solution {
 
         //напишите тут ваш код
         Date finish = new Date();
+
         return finish.getTime() - start.getTime();
 
     }

@@ -10,20 +10,21 @@ import java.io.InputStreamReader;
 public class Solution {
     public static void main(String[] args) throws Exception {
         //напишите тут ваш код
-        int x = 0;
-        int a = 0;
-        int b = 0;
-        while(x != -1) {
-            BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-            x = Integer.parseInt(reader.readLine());
-            if (x != -1) {
-                a +=x;
-                b +=1;
-            }
 
+        BufferedReader rd = new BufferedReader(new InputStreamReader(System.in));
+        double sum = 0;
+        int count = 0;
+
+        while(true) { //Infinite loop, not nice but sometimes needed
+            double x = Double.parseDouble(rd.readLine());
+            if(x != -1) {
+                sum = sum +x;
+                count++;
+            } else
+                break;
         }
-        System.out.println((double) a/b);
 
+        System.out.println(sum/count);
 
     }
 }

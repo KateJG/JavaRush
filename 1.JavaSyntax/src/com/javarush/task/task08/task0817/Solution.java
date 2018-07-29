@@ -39,7 +39,6 @@ public class Solution {
                 if (pair.getValue().equals(value))
                     map.remove(pair.getKey());
             }
-
         }
 
         public static void main (String[]args){

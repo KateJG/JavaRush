@@ -11,7 +11,7 @@ import java.util.List;
 public class Solution {
     public static List getListForGet() {
         //напишите тут ваш код
-        return new ArrayList();
+        return new ArrayList<>();
 
     }
 

@@ -4,15 +4,40 @@ package com.javarush.task.task09.task0906;
 Логирование стек трейса
 */
 
-public class Solution {
-    public static void main(String[] args) {
-        log("In main method");
-    }
 
-    public static void log(String s) {
-        //напишите тут ваш код
-        String myLog = Thread.currentThread().getStackTrace()[2].getClassName()+
-                ": " + Thread.currentThread().getStackTrace()[2].getMethodName() + ": " + s;
-        System.out.println(myLog);
+    class ExceptionExampleOriginal {
+
+
+        public static void main(String[] args) {
+            System.out.println("main begin");
+            try {
+                System.out.println("main before call");
+
+                method1();
+
+
+                System.out.println("main after call");
+            } catch (RuntimeException e) {
+
+
+                String s = e.getMessage();
+                System.out.println(s);
+            }
+            System.out.println("main end");
+        }
+
+        public static void method1() {
+            System.out.println("method1 begin");
+            method2();
+
+            System.out.println("method1 end");
+        }
+
+
+        public static void method2() {
+            System.out.println("method2");
+            String s = "Message: Unknown Exception";
+         //   throw new RuntimeException(s);
+
+        }
     }
-}

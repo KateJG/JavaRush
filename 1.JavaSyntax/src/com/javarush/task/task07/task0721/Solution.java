@@ -12,12 +12,12 @@ public class Solution {
     public static void main(String[] args) throws IOException {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         int[] arr = new int[20];
-        for (int i = 0; i < 20; i++) {
+        for (int i = 0; i < arr.length; i++) {
             arr[i] = Integer.parseInt(reader.readLine());
         }
-        int maximum = Integer.MIN_VALUE;
+        int maximum = arr[0];
         int minimum = arr[0];
-        for (int i = 0; i < 20; i++) {
+        for (int i = 0; i < arr.length; i++) {
             if (maximum < arr[i]) {
                 maximum = arr[i];
             }

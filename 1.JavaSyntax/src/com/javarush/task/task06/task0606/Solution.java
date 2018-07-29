@@ -13,18 +13,43 @@ public class Solution {
 
     public static void main(String[] args) throws IOException {
         //напишите тут ваш код
-        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-        int number = Integer.parseInt(reader.readLine());
-        for (; number != 0; number /= 10) {
-            if (number %2 == 0) {
-                even ++;
-            }
-            else {
-                odd++; }
+        BufferedReader rd = new BufferedReader(new InputStreamReader(System.in));
+        int num = Integer.parseInt(rd.readLine());
+
+        while (num != 0) {
+            if (num%2 == 0){
+                even++;
+            } else odd++;
+            num /=10;
         }
-        System.out.println("Even: "+ even + " Odd: " + odd);
+
+//        for (; num != 0; num /= 10) {
+//            if (num %2 == 0) {
+//                even ++;
+//            }
+//            else {
+//                odd++; }
 
 
+
+//        String s = rd.readLine();
+//
+//        for (int i = 0; i < s.length(); i++) {
+//
+//            if (Character.getNumericValue(s.charAt(i)) % 2 == 0)
+//                even++;
+//            else
+//                odd++;
+//        }
+//
+//        System.out.println("Even: " + even + " Odd: " + odd);
+//    }
+//}
+
+
+
+
+        System.out.println("Even: " +even+ " Odd " + odd);
 
     }
 }

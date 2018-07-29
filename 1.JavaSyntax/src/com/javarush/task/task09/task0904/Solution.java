@@ -50,6 +50,7 @@ public class Solution {
 
     public static StackTraceElement[] method9() {
         return method10();
+
     }
 
     public static StackTraceElement[] method10() {
