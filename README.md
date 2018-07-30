@@ -1,3 +1,3 @@
 # JavaRushTasks
 
-This project is from [JavaRush.ru](https://javarush.ru/)
+This project from [JavaRush.ru](https://javarush.ru/)
