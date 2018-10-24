@@ -28,7 +28,9 @@ public class Solution {
         if(a <= 0 || b <= 0) {
             throw new Exception();
         }
+
         System.out.println(GCD(a,b));
+
 
 
     }
