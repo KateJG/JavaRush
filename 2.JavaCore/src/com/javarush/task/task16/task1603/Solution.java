@@ -15,10 +15,8 @@ public class Solution {
 
         for(int i = 0; i < 5; i++) {
             list.add(new Thread(new SpecialThread()));
+            new Thread(new SpecialThread()).run();
         }
-
-
-
 
     }
 
