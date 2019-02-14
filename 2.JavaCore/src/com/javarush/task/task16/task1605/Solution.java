@@ -29,38 +29,38 @@ public class Solution {
     }
 
     public static class Violin implements MusicalInstrument {
-
-
-
         private String owner;
 
         public Violin(String owner) {
             this.owner = owner;
         }
 
-        @Override
         public Date startPlaying() {
             System.out.println(this.owner + " is starting to play");
             return new Date();
         }
-        @Override
+
         public Date stopPlaying() {
             System.out.println(this.owner + " is stopping playing");
             return new Date();
         }
 
         @Override
-        public void run() {
-            Date start = startPlaying();
-            sleepNSeconds(1);
-            Date finish = stopPlaying();
-            System.out.println("Playing " + (finish.getTime() - start.getTime()) + " ms");
-            /////**********OR*********/////
-//            long start = startPlaying().getTime();
+//        public void run() {
+//            Date begin = startPlaying();
 //            sleepNSeconds(1);
-//            long finish = stopPlaying().getTime();
-//            System.out.println("Playing " + (finish - start) + " ms");
-
+//            Date finish = stopPlaying();
+//            System.out.println("Playing " + (finish.getTime() - begin.getTime()) + " ms");
+//        }
+        //OR
+        public void run() {
+            long begin = startPlaying().getTime();
+            sleepNSeconds(1);
+            //Date finish = stopPlaying();
+            System.out.println("Playing " + (stopPlaying().getTime() - begin) + " ms");
         }
+
+
+
     }
 }
