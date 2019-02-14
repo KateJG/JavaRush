@@ -1,6 +1,4 @@
-taskKey="com.javarush.task.task16.task1601"
-
-My first thread
+taskKey="com.javarush.task.task16.task1601"\n\nMy first thread
 
 Создать public static class TestThread - нить с интерфейсом Runnable.
 TestThread должен выводить в консоль "My first thread".
