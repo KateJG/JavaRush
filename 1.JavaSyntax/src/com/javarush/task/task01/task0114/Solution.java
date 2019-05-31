@@ -7,16 +7,12 @@ JavaRush. Learn once - use anywhere
 public class Solution {
     public static void main(String[] args) {
         //напишите тут ваш код
-    String S = "JavaRush. Learn once - use anywhere";
-    System.out.println(S);
-    System.out.println(S);
-    System.out.println(S);
-    System.out.println(S);
-    System.out.println(S);
-    System.out.println(S);
-    System.out.println(S);
-    System.out.println(S);
-    System.out.println(S);
-    System.out.println(S);
+
+        String s = "JavaRush. Learn once - use anywhere";
+
+        for(int i = 0; i < 10; i++ ) {
+            System.out.println(s);
+        }
+
     }
 }
