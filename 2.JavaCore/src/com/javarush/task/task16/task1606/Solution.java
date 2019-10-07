@@ -12,6 +12,7 @@ public class Solution {
         PrintListThread firstThread = new PrintListThread("firstThread");
         PrintListThread secondThread = new PrintListThread("secondThread");
         firstThread.start();
+        firstThread.join();
         secondThread.start();
     }
 
@@ -35,7 +36,7 @@ public class Solution {
         public PrintListThread(String name) {
             super(name);
         }
-        @Override
+
         public void run() {
             printList(getList(20), getName());
         }
