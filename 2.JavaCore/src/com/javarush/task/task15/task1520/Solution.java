@@ -11,32 +11,34 @@ public class Solution {
         Util.move(duck);
     }
 
-    public static class Duck implements Flyable, Movable {
+    public static class Duck implements CanFly, CanMove {
         @Override
         public void doAction() {
-            System.out.println("flying");
+            System.out.println("Flying");
         }
+
         @Override
         public void doAnotherAction() {
-            System.out.println("moving");
+            System.out.println("Moving");
+
         }
     }
 
     public static class Util {
-        static void fly(Flyable animal) {
+        static void fly(CanFly animal) {
             animal.doAction();
         }
 
-        static void move(Movable animal) {
+        static void move(CanMove animal) {
             animal.doAnotherAction();
         }
     }
 
-    public static interface Flyable {
+    public static interface CanFly {
         void doAction();
     }
 
-    public static interface Movable {
+    public static interface CanMove {
         void doAnotherAction();
     }
 }

@@ -1,6 +1,4 @@
-taskKey="com.javarush.task.task15.task1506"
-
-Что-то лишнее
+taskKey="com.javarush.task.task15.task1506"\n\nЧто-то лишнее
 
 1. Программа должна выводить следующее:
 Это double

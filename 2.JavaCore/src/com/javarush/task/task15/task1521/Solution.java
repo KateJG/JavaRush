@@ -27,4 +27,6 @@ public class Solution {
         new Tree().info(new Short("4").toString());
         new Tree().info(new BigDecimal("4").toString());
     }
+
+
 }

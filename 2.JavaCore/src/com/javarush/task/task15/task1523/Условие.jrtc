@@ -1,6 +1,4 @@
-taskKey="com.javarush.task.task15.task1523"
-
-Перегрузка конструкторов
+taskKey="com.javarush.task.task15.task1523"\n\nПерегрузка конструкторов
 
 1. В классе Solution создай 4 конструктора с разными модификаторами доступа.
 2. В отдельном файле создай класс SubSolution и сделай его потомком класса Solution.

@@ -1,6 +1,4 @@
-taskKey="com.javarush.task.task15.task1507"
-
-ООП - Перегрузка
+taskKey="com.javarush.task.task15.task1507"\n\nООП - Перегрузка
 
 Перегрузите метод printMatrix 8 различными способами. В итоге должно получиться 10 различных методов printMatrix.
 

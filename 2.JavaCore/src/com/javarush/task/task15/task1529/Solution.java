@@ -15,7 +15,6 @@ public class Solution {
     
     static {
         //add your code here - добавьте код тут
-        reset();
 
     }
 
@@ -23,19 +22,5 @@ public class Solution {
 
     public static void reset() {
         //add your code here - добавьте код тут
-
-        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-
-        try{
-            if(reader.readLine().equals("helicopter")) {
-                result = new Helicopter();
-            } else {
-                result = new Plane(250);
-            }
-            reader.close();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-
     }
 }

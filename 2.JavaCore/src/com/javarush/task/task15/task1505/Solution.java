@@ -8,11 +8,11 @@ import java.util.List;
 */
 
 public class Solution {
-    public static interface Alive {
+    public static interface LivingPart {
         Object containsBones();
     }
 
-    public static class BodyPart implements Alive {
+    public static class BodyPart implements LivingPart {
         private String name;
 
         public BodyPart(String name) {
@@ -37,7 +37,7 @@ public class Solution {
         }
         @Override
         public Object containsBones() {
-            if(super.containsBones().equals("Yes") && !(isArtificial)) {
+            if (super.containsBones().equals("Yes") && !(isArtificial)) {
                 return "Yes";
             } else {
                 return "No";
@@ -48,10 +48,10 @@ public class Solution {
     public static void main(String[] args) {
         printlnFingers();
         printlnBodyParts();
-        printlnAlives();
+        printlnLivingParts();
     }
 
-    private static void printlnAlives() {
+    private static void printlnLivingParts() {
         System.out.println(new BodyPart("Рука").containsBones());
     }
 

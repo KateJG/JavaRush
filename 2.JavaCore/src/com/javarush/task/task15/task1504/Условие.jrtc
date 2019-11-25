@@ -1,6 +1,4 @@
-taskKey="com.javarush.task.task15.task1504"
-
-ООП - книги
+taskKey="com.javarush.task.task15.task1504"\n\nООП - книги
 
 1. Создайте public static класс MarkTwainBook, который наследуется от Book. Имя автора [Mark Twain].
 Параметр конструктора - название книги(title).
@@ -16,12 +14,12 @@ taskKey="com.javarush.task.task15.task1504"
 1.	Класс Solution должен содержать public static класс MarkTwainBook.
 2.	Класс MarkTwainBook должен быть потомком класса Book.
 3.	В классе MarkTwainBook должен быть корректно реализован конструктор с одним параметром типа String (название книги).
-4.	Конструктор класса MarkTwainBook должен вызывать конструктор класса предка (Book) с параметром "Mark Twain".
+4.	Конструктор класса MarkTwainBook должен вызывать конструктор класса предка (Book) с параметром &quot;Mark Twain&quot;.
 5.	Метод getBook в классе MarkTwainBook должен иметь тип возвращаемого значения MarkTwainBook и возвращать текущий объект.
 6.	Класс Solution должен содержать public static класс AgathaChristieBook.
 7.	Класс AgathaChristieBook должен быть потомком класса Book.
 8.	В классе AgathaChristieBook должен быть корректно реализован конструктор с одним параметром типа String (название книги).
-9.	Конструктор класса AgathaChristieBook должен вызывать конструктор класса предка (Book) с параметром "Agatha Christie".
+9.	Конструктор класса AgathaChristieBook должен вызывать конструктор класса предка (Book) с параметром &quot;Agatha Christie&quot;.
 10.	Метод getBook в классе AgathaChristieBook должен иметь тип возвращаемого значения AgathaChristieBook и возвращать текущий объект.
 11.	Метод getTitle в классах AgathaChristieBook и MarkTwainBook должен возвращать название конкретной книги.
 12.	Метод getOutputByBookType должен возвращать корректную строку для объектов типа AgathaChristieBook.

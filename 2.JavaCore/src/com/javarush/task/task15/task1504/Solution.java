@@ -27,12 +27,13 @@ public class Solution {
         public abstract String getTitle();
 
         private String getOutputByBookType() {
-            String agathaChristieOutput = author + ", " + getBook().getTitle() + " is a detective";
-            String markTwainOutput = getBook().getTitle() + " book was written by " + author;
+            String agathaChristieOutput = author + ": " + getBook().getTitle() + " is a detective";
+            String markTwainOutput = getBook().getTitle() + " was written by " + author;
 
             String output = "output";
             //Add your code here
-            if(this instanceof MarkTwainBook) { //this is the same as getBook//
+
+            if(this instanceof MarkTwainBook) {
                 output = markTwainOutput;
             } else if (getBook() instanceof AgathaChristieBook) {
                 output = agathaChristieOutput;
@@ -46,17 +47,19 @@ public class Solution {
         }
     }
 
+
     public static class MarkTwainBook extends Book {
 
-        private String title;
-        public MarkTwainBook(String title){
-            super("Mark Twain");
+
+        public String title;
+        public MarkTwainBook(String title) {
+            super ("Mark Twain");
             this.title = title;
         }
         @Override
-        public MarkTwainBook getBook(){
+      public MarkTwainBook getBook(){
             return this;
-        }
+      }
 
         @Override
         public String getTitle() {
@@ -64,23 +67,23 @@ public class Solution {
         }
     }
 
-    public static class AgathaChristieBook extends Book {
+    public static class AgathaChristieBook extends Book{
 
-        private String title;
+        public String title;
         public AgathaChristieBook(String title) {
             super("Agatha Christie");
             this.title = title;
         }
+
         @Override
         public AgathaChristieBook getBook() {
             return this;
         }
 
         @Override
-        public String getTitle(){
+        public String getTitle() {
             return title;
         }
 
     }
-
 }

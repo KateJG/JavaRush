@@ -9,28 +9,25 @@ import java.util.List;
 */
 
 public class Solution {
-
     public static List<String> lines = new ArrayList<String>();
 
+
     static{
-        String s;
-        try {
+        String s = "Privet";
+        try{
             BufferedReader reader = new BufferedReader(new InputStreamReader(new FileInputStream(Statics.FILE_NAME)));
-            while ((s = reader.readLine()) != null)
-            {
-               lines.add(s);
+            while((s = reader.readLine()) != null){
+                lines.add(s);
             }
-            //reader.close();
+            reader.close();
         } catch (IOException e) {
             e.printStackTrace();
         }
+
     }
-
-
 
 
     public static void main(String[] args) {
         System.out.println(lines);
-
     }
 }

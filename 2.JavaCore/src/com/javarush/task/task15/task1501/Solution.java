@@ -2,17 +2,6 @@ package com.javarush.task.task15.task1501;
 
 /* 
 ООП - Расставить интерфейсы
-1. Добавь все возможные интерфейсы из Movable, Sellable, Discountable в класс Clothes.
-2. Реализуй их методы.
-
-
-Требования:
-1. Класс Clothes должен поддерживать интерфейс Movable.
-2. Класс Clothes должен поддерживать интерфейс Sellable.
-3. Класс Clothes должен поддерживать интерфейс Discountable.
-4. В классе Clothes должен быть реализован метод isMovable.
-5. В классе Clothes должен быть реализован метод getAllowedAction без параметров.
-6. В классе Clothes должен быть реализован метод getAllowedAction с одним параметром типа String.
 */
 
 public class Solution {
@@ -36,13 +25,14 @@ public class Solution {
 
         @Override
         public boolean isMovable() {
-            return true;
+            return false;
         }
 
         @Override
         public Object getAllowedAction() {
             return null;
         }
+
 
         @Override
         public Object getAllowedAction(String name) {

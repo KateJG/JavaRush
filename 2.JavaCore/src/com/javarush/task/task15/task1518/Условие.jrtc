@@ -1,6 +1,4 @@
-taskKey="com.javarush.task.task15.task1518"
-
-Статики и котики
+taskKey="com.javarush.task.task15.task1518"\n\nСтатики и котики
 
 1. В классе Solution создай класс Cat с публичным полем name типа String.
 2. В статическом блоке создай объект типа Cat и присвой его переменной cat(не забудь инициализировать поле name).

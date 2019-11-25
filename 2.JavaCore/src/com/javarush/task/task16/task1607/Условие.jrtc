@@ -1,6 +1,4 @@
-taskKey="com.javarush.task.task16.task1607"
-
-Horse Racing
+taskKey="com.javarush.task.task16.task1607"\n\nHorse Racing
 
 Разберись, что делает программа.
 Реализуй метод calculateHorsesFinished. Он должен:

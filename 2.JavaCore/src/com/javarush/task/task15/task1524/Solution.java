@@ -1,18 +1,7 @@
 package com.javarush.task.task15.task1524;
 
 /* 
-Исправить порядок инициализации данных так, чтобы результат был следующим:
-static void init()
-Static block
-public static void main
-non-static block
-static void printAllFields
-0
-null
-Solution constructor
-static void printAllFields
-6
-First name
+Порядок загрузки переменных
 */
 
 public class Solution {
@@ -21,22 +10,18 @@ public class Solution {
         init();
     }
 
-    public static void init() {
-        System.out.println("static void init()");
-    }
-
     static {
         System.out.println("Static block");
     }
 
     {
-        System.out.println("non-static block");
+        System.out.println("Non-static block");
         printAllFields(this);
     }
 
     public int i = 6;
-    public String name = "First name";
 
+    public String name = "First name";
 
 
     public Solution() {
@@ -44,6 +29,9 @@ public class Solution {
         printAllFields(this);
     }
 
+    public static void init() {
+        System.out.println("static void init()");
+    }
 
     public static void main(String[] args) {
         System.out.println("public static void main");

@@ -1,6 +1,4 @@
-taskKey="com.javarush.task.task15.task1522"
-
-Закрепляем паттерн Singleton
+taskKey="com.javarush.task.task15.task1522"\n\nЗакрепляем паттерн Singleton
 
 1. Найти пример реализации паттерна Singleton с ленивой реализацией(lazy initialization). Используй свой любимый поисковик(например google).
 2. По образу и подобию в отдельных файлах создай три класса синглтона Sun, Moon, Earth.

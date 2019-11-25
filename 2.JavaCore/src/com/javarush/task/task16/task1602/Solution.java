@@ -12,17 +12,15 @@ public class Solution {
 
     public static class TestThread extends Thread{
 
-        static {
+        static{
             System.out.println("it's a static block inside TestThread");
         }
-
         @Override
-        public void run() {
+        public void run(){
+
             System.out.println("it's a run method");
         }
+
+
     }
-
-
-
-    
 }
