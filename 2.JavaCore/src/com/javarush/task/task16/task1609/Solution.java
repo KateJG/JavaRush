@@ -9,6 +9,7 @@ public class Solution {
         Mouse alpha = new Mouse("#1");
         //alpha.join();
         Mouse mouse1 = new Mouse("#2");
+        //alpha.join();
         Mouse mouse2 = new Mouse("#3");
     }
 
